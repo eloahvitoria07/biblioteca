@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-   <div>
+   <div class="titulo">
         <h1>Bibioteca digital</h1>
     </div>
 
-   <div class="conteiner">
+   <div class="inicio">
         <h2></h2>
         <form>
             <label for="nomedaobra">Nome da obra:</label>
@@ -23,31 +24,14 @@
             <label for="genero">Gênero:</label>
             <input type="text" id="genero" required><br>
 
-            <label for="tempo">Tempo de leitura:</label>
+            <label for="pag">Número de páiginas:</label>
+            <input type="number" id="pag" required><br>
+
+            <label for="tempo">Tempo de leitura :</label>
             <input type="text" id="tempo" required><br>
 
             <label for="cena">Cena favorita:</label>
             <input type="text" id="cena" required><br>
-
-            <label for="pers">Personagem favorito:</label>
-            <input type="text" id="pers" required><br>
-
-            <ul>
-                <li>
-                    <p>Gostou?</p>
-                    <input type="radio" id="nao" name="nao">
-                    <label for="nao">Não</label><br>
-
-                    <input type="radio" id="sim" name="sim" >
-                    <label for="sim">Sim</label><br>
-                </li>
-                <li>
-                    <label for="mudanca">O que mudaria?</label>
-                    <input type="text" id="mudanca" required>
-                </li>
-            </ul><br>
-            <label for="opiniao">Opinião:</label>
-            <input type="text" id="opiniao" required><br>
 
             <p>Recomendaria?</p>
 
@@ -57,12 +41,39 @@
             <input type="radio" id="sim2" name="sim2" >
             <label for="sim2">Sim</label><br>
             </form>
-    
+
+            <button type="submit" class="salvar">Salvar</button>
+            <button type="button" class="cancelar">Cancelar</button>
+</div>
+         <div class="final">
+            <h2>Listagem de livros </h2>
+            <button>Importar</button>
+            <button>Exportar</button>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nome do livro</th>
+                        <th>Autor</th>
+                        <th>Gênero</th>
+                        <th>Número de páginas</th>
+                        <th>Tempo de leitura</th>
+                        <th>Recomenda?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
             </div>
-            <div class="footer-buttons">
-                <button type="submit" class="salvar">Salvar</button>
-                <button type="button" class="cancelar">Cancelar</button>
-            </div>
+        
+             
    
 </body>
 </html>

@@ -1,0 +1,141 @@
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e6ccff, #f7e9ff); /* lilás suave */
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* ===== TÍTULO ===== */
+.titulo h1 {
+    font-size: 2.5rem;
+    color: #5b3d8f;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* ===== FORMULÁRIO ===== */
+.inicio {
+
+    width: 100%;
+    background: #ffffffcc;
+    backdrop-filter: blur(3px);
+    padding: 25px 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(115, 60, 173, 0.25);
+    margin-bottom: 40px;
+}
+
+label {
+    color: #4c2a75;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 18px;
+    background: #f5eaff;
+    border: 2px solid #d4b3ff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #a675ff;
+    outline: none;
+    background: #f9f1ff;
+}
+
+/* ===== BOTÕES ===== */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.salvar {
+    background: #a875ff;
+    color: #fff;
+}
+
+.salvar:hover {
+    background: #8c5edf;
+}
+
+.cancelar {
+    background: #e1c5ff;
+    color: #4c2a75;
+}
+
+.cancelar:hover {
+    background: #d3b3ff;
+}
+
+/* ===== ÁREA FINAL ===== */
+.final {
+    width: 100%;
+    background: #ffffffcc;
+    backdrop-filter: blur(3px);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(115, 60, 173, 0.25);
+}
+
+.final h2 {
+    color: #5b3d8f;
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+}
+
+.final button {
+    background: #a875ff;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.final button:hover {
+    background: #8c5edf;
+}
+
+/* ===== TABELA ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+th {
+    background: #b98dfd;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    background: #f6ecff;
+    padding: 12px;
+    border-bottom: 2px solid #e3d3ff;
+}
+
+tr:nth-child(even) td {
+    background: #efe3ff;
+}
+
+tr:hover td {
+    background: #e4d3ff;
+    transition: 0.2s;
+}
