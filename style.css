@@ -1,77 +1,63 @@
-/* ===== CONFIGURAÇÕES GERAIS ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+    background: #d9a5df;
     font-family: "Poppins", sans-serif;
+    margin: 20px;
 }
 
-body {
-    background: linear-gradient(135deg, #e6ccff, #f7e9ff); /* lilás suave */
-    min-height: 100vh;
-    padding: 30px;
-}
-
-/* ===== TÍTULO ===== */
-.titulo h1 {
-    font-size: 2.5rem;
+.titulo{
     color: #5b3d8f;
-    margin-bottom: 25px;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 1px;
+    text-align: center; 
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
 }
 
-/* ===== FORMULÁRIO ===== */
-.inicio {
-
-    width: 100%;
-    background: #ffffffcc;
-    backdrop-filter: blur(3px);
-    padding: 25px 30px;
+.caixa{
+    
+    background: #ffffffcc;    
     border-radius: 16px;
-    box-shadow: 0 0 15px rgba(115, 60, 173, 0.25);
-    margin-bottom: 40px;
+    padding: 25px ;
+    box-shadow: 0 0 20px rgba(115, 60, 173, 0.25);
+    margin-bottom: 25px;
 }
 
-label {
+.a {
     color: #4c2a75;
-    font-weight: 600;
+     font-weight: 600;
+     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-input[type="text"],
-input[type="number"] {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0 18px;
+.b {
+    width: 99%;
+    padding: 9px;
+    margin: 7px 0 15px;
     background: #f5eaff;
-    border: 2px solid #d4b3ff;
+    border: 2px solid #9f72da;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: 3s;
 }
 
-input:focus {
-    border-color: #a675ff;
+.b:focus {
+    border-color: #6c237a;
     outline: none;
-    background: #f9f1ff;
+    background: #dad8dc;
 }
 
-/* ===== BOTÕES ===== */
 button {
     padding: 12px 20px;
     border: none;
     border-radius: 10px;
     font-weight: 600;
     cursor: pointer;
-    transition: 0.3s;
-}
-
-.salvar {
-    background: #a875ff;
     color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.salvar:hover {
+.c{
+    background: #a875ff;
+}
+
+.c:hover{
     background: #8c5edf;
 }
 
@@ -81,61 +67,32 @@ button {
 }
 
 .cancelar:hover {
-    background: #d3b3ff;
+    background: #b595f2;
 }
 
-/* ===== ÁREA FINAL ===== */
-.final {
-    width: 100%;
-    background: #ffffffcc;
-    backdrop-filter: blur(3px);
-    padding: 25px;
-    border-radius: 16px;
-    box-shadow: 0 0 15px rgba(115, 60, 173, 0.25);
-}
-
-.final h2 {
+h2 {
     color: #5b3d8f;
     margin-bottom: 15px;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.final button {
-    background: #a875ff;
-    color: white;
-    margin-bottom: 10px;
-}
-
-.final button:hover {
-    background: #8c5edf;
-}
-
-/* ===== TABELA ===== */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 12px;
+    border:#4c2a75 solid 2px ;
 }
 
 th {
-    background: #b98dfd;
-    color: white;
-    padding: 12px;
-    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+    background: #4c2a75;
+    color: #b98dfd;
     font-weight: 600;
 }
-
-td {
-    background: #f6ecff;
-    padding: 12px;
-    border-bottom: 2px solid #e3d3ff;
+th, td{
+    border: solid 2px #4c2a75;
+     padding: 15px;
 }
 
-tr:nth-child(even) td {
-    background: #efe3ff;
-}
 
-tr:hover td {
-    background: #e4d3ff;
-    transition: 0.2s;
-}

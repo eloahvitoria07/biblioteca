@@ -3,52 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca</title>
     <link rel="stylesheet" href="style.css">
+    <title>Biblioteca</title>
+    <link rel="icon" href="imagem/icone.png" type="favicon.ico">
 </head>
 
 <body>
    <div class="titulo">
-        <h1>Bibioteca digital</h1>
+        <h1 class="title">Bibioteca digital</h1>
     </div>
 
-   <div class="inicio">
-        <h2></h2>
+   <div class="caixa">
+        <h2> Cadastro de livro</h2>
         <form>
-            <label for="nomedaobra">Nome da obra:</label>
-            <input type="text" id="nomedaobra" required><br>
+            <label class="a" for="nomedaobra">Nome da obra:</label>
+            <input class="b"  type="text" id="nomedaobra" required><br>
 
-            <label for="autor">Autor:</label>
-            <input type="text" id="autor" required><br>
+            <label class="a" for="autor">Autor:</label>
+            <input class="b" type="text" id="autor" required><br>
 
-            <label for="genero">Gênero:</label>
-            <input type="text" id="genero" required><br>
+            <label class="a" for="genero">Gênero:</label>
+            <input class="b" type="text" id="genero" required><br>
 
-            <label for="pag">Número de páiginas:</label>
-            <input type="number" id="pag" required><br>
+            <label class="a" for="pag">Número de páiginas:</label>
+            <input class="b" type="number" id="pag" required><br>
 
-            <label for="tempo">Tempo de leitura :</label>
-            <input type="text" id="tempo" required><br>
+            <label class="a" for="tempo">Tempo de leitura :</label>
+            <input class="b" type="text" id="tempo" required><br>
 
-            <label for="cena">Cena favorita:</label>
-            <input type="text" id="cena" required><br>
+            <label class="a" for="cena">Cena favorita:</label>
+            <input class="b" type="text" id="cena" required><br>
 
-            <p>Recomendaria?</p>
+            <p class="a">Recomendaria?</p>
+            <input type="radio" id="nao" name="rec" value="nao" >
+            <label class="a" for="nao">Não</label> <br/>
 
-            <input type="radio" id="nao2" name="nao2">
-            <label for="nao2">Não</label><br>
+            <input type="radio" id="sim" name="rec" value="sim">
+            <label class="a" for="sim">Sim</label> <br/>
+            <br>
 
-            <input type="radio" id="sim2" name="sim2" >
-            <label for="sim2">Sim</label><br>
+            <button type="submit" class="salvar c">Salvar</button>
+            <button type="button" class="cancelar ">Cancelar</button>
             </form>
-
-            <button type="submit" class="salvar">Salvar</button>
-            <button type="button" class="cancelar">Cancelar</button>
 </div>
-         <div class="final">
+         <div class="caixa">
             <h2>Listagem de livros </h2>
-            <button>Importar</button>
-            <button>Exportar</button>
+            <button class="c">Importar</button>
+            <button class="c">Exportar</button>
             <table border="1">
                 <thead>
                     <tr>
